@@ -8,16 +8,6 @@ import datetime
 import re
 
 
-# Ask user for his name and stores
-#
-#['dsfsdfsdfsdfsdfsdfsfd', '#sdfsdfsdf', '#cdsc2wc', '#asdfasdf']
-#>>> [item for item in s.split() if item[0] == '#']
-#['#sdfsdfsdf', '#cdsc2wc', '#asdfasdf']
-
-
-
-#['stackoverflow', 'people', 'helpful']
-
 
 cmd=''
 i=0
@@ -43,6 +33,7 @@ while cmd !=  'ex':
     item['tags'] = tags 
     entry[str(now)] = item            
     with open('entries.txt', mode='a') as f:
+        # json for comms with online services
         json.dump(entry,f)
         entry = {}    
 print 'tracker stopped'
