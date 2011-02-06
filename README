@@ -1,0 +1,5 @@
+A simple command-line time and activity tracker written in Python
+
+This will be extended to sync to online repositories and to use numerous shortcuts to assign activities to tasks and categories,
+and to behave with a bit more intelligence than most dumb time trackers.
+
